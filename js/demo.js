@@ -10,6 +10,7 @@ var alternateColour = $('link#new-stylesheet');
 //     alternateColour.attr("href", $.cookie("theme_csspath"));
 // }
 
+
 $("#colour").change(function () {
 
     if ($(this).val() !== '') {
