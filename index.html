@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iso | Corporate Bootstrap template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Owl carousel 2 -->
+    <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.theme.default.min.css">
+    <!-- Modal video-->
+    <link rel="stylesheet" href="vendor/modal-video/css/modal-video.min.css">
+    <!-- Leaflet-->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;font-display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/custom/logo2.jpg">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- NAVBAR
+        ================================================== -->
+        <div id="site-header"></div>
+        <!-- site header end -->
+
+    <!-- GET a QUOTE MODAL -->
+    <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered font-black" role="document">
+        <div class="modal-content p-md-3">
+          <div class="modal-header">
+            <h4 class="modal-title">Request a <span class="text-primary">quote</span></h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="firstname">First name<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="firstname" type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="lastname">Last name<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="lastname" type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="email">Email address<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="email" type="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="phone">Phone number <small class="small text-gray">optional</small></label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="projecttype">Project type<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="projecttype" type="text" placeholder="Enter your project type" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="budget">Estimated budget<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="budget" type="text" placeholder="Enter your estimated budget" required><small class="form-text text-muted">Project budget will be on <span class="text-dark">$</span></small>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="timeframe">Time frame<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="timeframe" type="text" placeholder="Maximum time for the project" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="projectdetail">Project details<span class="text-primary ml-1">&#42;</span></label>
+                  <textarea class="form-control" id="projectdetail" rows="5" placeholder="Provide a short brief about your project" required></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                  <button class="btn btn-primary" type="submit">Submit your request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION-->
+    <section class="hero hero-home with-pattern d-flex align-items-center py-5">
+      <div class="container py-5 mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h1 class="mb-3">Get noticed  </h1>
+            <h1 class="mb-3"> Be remembered </h1>
+            <p class="text-muted sub-heading">Social Media and Content Marketing | Translations | Designs | Recruitments </p><a class="video-btn media align-items-center" href="#" data-video-id="B6uuIHpFkuo"><span class="video-btn-icon"><i class="fas fa-play"></i></span>
+              <div class="media-body ml-3"><span class="text-muted d-block line-height-sm">Watch</span><strong class="text-uppercase text-dark">Intro Video</strong></div></a>
+          </div>
+          <div class="col-md-5 ml-auto">
+            <div class="img-gradient img-gradient-right"><img class="img-fluid shadow rounded" src="img/custom/custom9.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PARTNERS SECTION            
+    <section>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-1.png" alt="" height="25"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-2.png" alt="" height="25"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-3.png" alt="" height="25"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-4.png" alt="" height="25"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-5.png" alt="" height="25"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="img/logo-6.png" alt="" height="25"></div>
+        </div>
+      </div>
+    </section> -->
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Crafting Brand Experiences Through Effecient Services</h2>
+          </div>
+          <div class="col-lg-6"> 
+            <p class="text-muted">We, at Reina Marcoms, believe in building a connection, and the journey of doing so began in 2019. We aim to bridge the gap between the brands and their consumers through translated localised content and social media services. Keeping quality and commitment at the core of every delivery, we are proud to have associated with multiple businesses(Various Sectors) and helped their business reach new heights.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5">
+      <div class="container pb-5">
+        <div class="row">
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Social Media and Content Marketing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Translations</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Designs</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Recruitments</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
+            <div class="numeric-block order-2 order-lg-1 mb-lg-5">
+              <h3>Social Media and Content Marketing</h3>
+              <p class="text-muted py-3">Your social media presence speaks for you. So, make it impactful with us! We help you plan your social media strategy, create and implement innovative content, and reach out to your desired target audience. Further than generating aesthetic content, our goal is to cut through the white noise. We are here to see that your business stands out. From webpages to blogs and articles, our content writing services can help your business not only rank better for keywords, but also inform, engage, and convert your target audience into potential consumers.</p>
+            </div><img class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0" src="img/custom/custom12.jpg" alt="">
+          </div>
+          <div class="col-lg-5 mx-auto d-flex flex-column"><img class="flex-grow-0 img-fluid shadow rounded mb-5" src="img/custom/custom6.jpg" alt="">
+            <div class="numeric-block">
+              <h3>Translation</h3>
+              <p class="text-muted py-3">Are you finding it difficult to connect with a set of audience that belongs to a different linguistic and cultural background? Then, we’ve got you covered.  We offer reliable and accurate translation of any content in (Japanese, Chinese, Korean, English, Swedish, German, Bahasa Indonesia and many more) and deliver error-free services from the native translators.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
+            <div class="numeric-block order-2 order-lg-1 mb-lg-5">
+              <h3>Design</h3>
+              <p class="text-muted py-3">Your social media presence speaks for you. So, make it impactful with us! We help you plan your social media strategy, create and implement innovative content, and reach out to your desired target audience. Further than generating aesthetic content, our goal is to cut through the white noise. We are here to see that your business stands out. From webpages to blogs and articles, our content writing services can help your business not only rank better for keywords, but also inform, engage, and convert your target audience into potential consumers.</p>
+            </div><img class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0" src="img/custom/custom13.jpg" alt="">
+          </div>
+          <div class="col-lg-5 mx-auto d-flex flex-column"><img class="flex-grow-0 img-fluid shadow rounded mb-5" src="img/custom/custom3.jpg" alt="">
+            <div class="numeric-block">
+              <h3>Recruitment</h3>
+              <p class="text-muted py-3">Are you finding it difficult to get a job as per your skillset. We help you in finding jobs in Japan. If you have N3 Japanese language skill, do send us your resume.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-color-main map-bg">
+      <div class="container text-center py-5">
+        <div class="row mb-4">
+          <div class="col-lg-7 mx-auto">
+            <p class="h6 text-uppercase">Work process</p>
+            <h2>We complete every project with experience hand</h2>
+            <p>Time is money - let us make the most of yours</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#mental-health-1"> </use>
+                </svg>
+                <h4>Ideation </h4>
+                <!--<p class="text-small mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#paper-stack-1"> </use>
+                </svg>
+                <h4>Planning </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#design-1"> </use>
+                </svg>
+                <h4>Execution </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-light py-5">           
+      <div class="container py-5 text-center">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <p class="h6 text-uppercase text-primary">Newsletter</p>
+            <h2 class="mb-3">Stay up to date with useful tips via our newsletter</h2>
+            <p class="text-muted mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elite.</p>
+            <form class="p-2 bg-white rounded shadow-sm">
+              <div class="input-group p-1">
+                <input class="form-control border-0 shadow-0" type="email" placeholder="Enter your email address">
+                <div class="input-group-append">
+                  <button class="btn btn-primary rounded" type="submit">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center">
+            <p class="h6 text-uppercase text-primary">Testimonials</p>
+            <h2>What People Says About Us</h2>
+            <p class="text-muted mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="testimonials-slider owl-carousel owl-theme owl-dots-left">
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-1.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">John Charlez</h5>
+                      <cite class="text-gray">Iso client</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-2.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Samantha Lewis</h5>
+                      <cite class="text-gray">Iso client</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-3.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Carrie Steiniger</h5>
+                      <cite class="text-gray">Iso client</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <div class="row">
+              <div class="col-lg-6 col-6 mb-4">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-primary mb-3">
+                      <use xlink:href="#user-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">1600</h3>
+                    <p class="text-muted mb-0">Active users</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-6 mb-4">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-primary mb-3">
+                      <use xlink:href="#destination-map-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">2500</h3>
+                    <p class="text-muted mb-0">Global clients</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-6">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-primary mb-3">
+                      <use xlink:href="#quality-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">215</h3>
+                    <p class="text-muted mb-0">Win award</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-6">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-primary mb-3">
+                      <use xlink:href="#sales-up-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">2150</h3>
+                    <p class="text-muted mb-0">Client satisfaction</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scroll top button-->
+    <div class="scroll-top-btn" id="scrollTop"><i class="fas fa-long-arrow-alt-up"></i><span class="font-weight-bold text-uppercase small">To the Top</span></div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
+    <script src="vendor/modal-video/js/modal-video.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
