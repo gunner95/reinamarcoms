@@ -35,7 +35,7 @@ var leftNav = function() {
 
             x.innerHTML = `
             <header class="header fixed-top header-animated">
-              <nav class="navbar navbar-expand-lg navbar-light py-3">
+              <nav class="navbar navbar-expand-lg navbar-light bg-color-main-inverted py-3">
                 <div class="container"><a class="navbar-brand" href="index.html"><img src="img/custom/logo2.jpg" alt="..." width="100"></a>
                   <button class="navbar-toggler navbar-toggler-right bg-color-grey" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -65,7 +65,7 @@ var footer = function() {
     var x = document.getElementById('footer');
     if (x != null){
         x.innerHTML = `
-            <footer class="map-bg">
+            <footer class="map-bg bg-color-main-inverted">
               <!--<div class="container py-5 border-bottom">
                 <div class="row pt-5">
                   <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><img class="mb-3" src="img/custom/logo2.jpg" alt="" width="140">

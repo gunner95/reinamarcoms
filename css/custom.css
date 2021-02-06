@@ -1225,7 +1225,7 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
   position: absolute;
   bottom: -2rem;
   left: -2rem;
-  background: linear-gradient(45deg, #ffd653ff, #ffd653ff);
+  background: black;
   border-radius: 0.25rem;
   z-index: -1;
   opacity: 0.5;
@@ -2388,7 +2388,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: #845f31;
-  background-color: #000;
+  background-color: antiquewhite;
 }
 
 a {
@@ -2410,7 +2410,7 @@ a:hover, a:focus {
 }
 
 .bg-color-main {
-  background-color: #845f31;
+  background-color: antiquewhite;
   color: black;
 }
 
@@ -2429,6 +2429,10 @@ a:hover, a:focus {
 .bg-color-main-inverted {
   background-color: black;
   color: #845f31;
+}
+
+.margin-top-60 {
+  margin-top: -60px;
 }
 
 .bg-color-grey {
