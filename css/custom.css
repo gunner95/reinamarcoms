@@ -2418,6 +2418,14 @@ a:hover, a:focus {
   color: black;
 }
 
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.padding-bottom-15 {
+  padding-bottom: 15px;
+}
+
 .bg-color-main-inverted {
   background-color: black;
   color: #845f31;
