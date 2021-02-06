@@ -2435,6 +2435,15 @@ a:hover, a:focus {
   margin-top: -60px;
 }
 
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.bg-color-mustard {
+  background-color: #845f31;
+  color: black;
+}
+
 .bg-color-grey {
   background-color: #242f35;
 }
