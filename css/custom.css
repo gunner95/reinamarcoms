@@ -2439,9 +2439,18 @@ a:hover, a:focus {
   padding-top: 10px;
 }
 
+.asterix {
+  font-size: 15px;
+  vertical-align: top;
+}
+
 .bg-color-mustard {
   background-color: #845f31;
   color: black;
+}
+
+.bg-color-whitish {
+  background-color: #cfc1b0;
 }
 
 .bg-color-grey {

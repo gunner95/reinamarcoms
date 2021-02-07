@@ -90,7 +90,7 @@ var footer = function() {
               <div class="container py-4">           
                 <div class="row text-center">
                   <div class="col-lg-6 p-lg-0 text-lg-left">
-                    <p class="text-muted text-small mb-0">© 2020 Reina Marcoms, All Rights Reserved.</p>
+                    <p class="text-muted text-small mb-0">© 2021 Reina Marcoms, All Rights Reserved.</p>
                   </div>
                   <div class="col-lg-6 p-lg-0 text-lg-right">
                     <p class="text-muted text-small mb-0">Template designed by <a class="text-primary reset-anchor" href="https://bootstraptemple.com/p/corporate">Bootstrap Temple</a></p>
@@ -98,6 +98,7 @@ var footer = function() {
                 </div>
               </div>
             </footer>
+            
         `
     }
 }
