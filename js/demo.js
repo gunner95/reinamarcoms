@@ -232,7 +232,7 @@ var quoteSubmit = function() {
                       // inject the alert to .messages div in our form
                       $('#quoteForm').find('.messages').html(alertBox);
                       // empty the form
-                      $('#quoteForm')[0].reset();
+                      $('form#quoteForm')[0].reset();
                   }
               }
           });
