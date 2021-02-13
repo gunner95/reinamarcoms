@@ -215,7 +215,7 @@ var quoteSubmit = function() {
           $.ajax({
               type: "POST",
               url: url,
-              data: $(this).serialize(),
+              data: $('form#quoteForm').serialize(),
               success: function (data)
               {
                   // data = JSON object that contact.php returns
@@ -241,7 +241,7 @@ var quoteSubmit = function() {
   })
 };
 
-//quoteForm();
+quoteForm();
 leftNav();
 footer();
 quoteSubmit();
