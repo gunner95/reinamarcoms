@@ -7,7 +7,7 @@
 $from = 'contact@reinamarcoms.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'rmithal@gmail.com';
+$sendTo = 'reinamarcoms@gmail.com';
 
 // subject of the email
 $subject = 'New Quotation';
