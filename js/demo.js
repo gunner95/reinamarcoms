@@ -29,6 +29,70 @@ $("#colour").change(function () {
     return false;
 });
 
+var quoteForm = function() {
+  var x = document.getElementById('quote-form');
+  if (x != null){
+    x.innerHTML = `
+    <!-- GET a QUOTE MODAL -->
+    <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content p-md-3">
+          <div class="modal-header">
+            <h4 class="modal-title">Request a <span class="text-primary">quote</span></h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form name="quoteForm" id="quoteForm" method="post" action="quote.php" autocomplete="on">
+              <div class="messages"></div>
+              <div class="row">
+                <span class="text-primary ml-1">No matter what your budget is, we customise services according to it . Our aim is to deliver you the best of the pack.</span>
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="name">Name<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <!-- <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="lastname">Last name<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="lastname" type="text" placeholder="Enter your last name" required>
+                </div> -->
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="email">Email address<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="email" type="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="phone">Phone number <small class="small text-gray">optional</small></label>
+                  <input class="form-control" id="phone" type="tel" name="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="projecttype">Project type<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="projecttype" type="text" name="type" placeholder="Enter your project type" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="budget">Estimated budget<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="budget" type="text" name="budget" placeholder="Enter your estimated budget in USD" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="timeframe">Time frame<span class="text-primary ml-1">&#42;</span></label>
+                  <input class="form-control" id="timeframe" type="text" name="time" placeholder="Maximum time for the project" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="projectdetail">Project details<span class="text-primary ml-1">&#42;</span></label>
+                  <textarea class="form-control" id="projectdetail" rows="5" name="message" placeholder="Provide a short brief about your project" required></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                  <button class="btn btn-primary" type="submit">Submit your request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    `
+  }
+}
+
 var leftNav = function() {
         var x = document.getElementById('site-header');
         if (x != null){
@@ -103,5 +167,82 @@ var footer = function() {
     }
 }
 
+var contactSubmit = function() {
+  $('#contactForm').on('submit', function (e) {
+
+      // if the validator does not prevent form submit
+      if (!e.isDefaultPrevented()) {
+          var url = "contact.php";
+
+          // POST values in the background the the script URL
+          $.ajax({
+              type: "POST",
+              url: url,
+              data: $(this).serialize(),
+              success: function (data)
+              {
+                  // data = JSON object that contact.php returns
+
+                  // we recieve the type of the message: success x danger and apply it to the 
+                  var messageAlert = 'alert-' + data.type;
+                  var messageText = data.message;
+
+                  // let's compose Bootstrap alert box HTML
+                  var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                  
+                  // If we have messageAlert and messageText
+                  if (messageAlert && messageText) {
+                      // inject the alert to .messages div in our form
+                      $('#contactForm').find('.messages').html(alertBox);
+                      // empty the form
+                      $('#contactForm')[0].reset();
+                  }
+              }
+          });
+          return false;
+      }
+  })
+};
+
+var quoteSubmit = function() {
+  $('#quoteForm').on('submit', function (e) {
+
+      // if the validator does not prevent form submit
+      if (!e.isDefaultPrevented()) {
+          var url = "quote.php";
+
+          // POST values in the background the the script URL
+          $.ajax({
+              type: "POST",
+              url: url,
+              data: $(this).serialize(),
+              success: function (data)
+              {
+                  // data = JSON object that contact.php returns
+
+                  // we recieve the type of the message: success x danger and apply it to the 
+                  var messageAlert = 'alert-' + data.type;
+                  var messageText = data.message;
+
+                  // let's compose Bootstrap alert box HTML
+                  var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                  
+                  // If we have messageAlert and messageText
+                  if (messageAlert && messageText) {
+                      // inject the alert to .messages div in our form
+                      $('#quoteForm').find('.messages').html(alertBox);
+                      // empty the form
+                      $('#quoteForm')[0].reset();
+                  }
+              }
+          });
+          return false;
+      }
+  })
+};
+
+quoteForm();
 leftNav();
 footer();
+quoteSubmit();
+contactSubmit();
